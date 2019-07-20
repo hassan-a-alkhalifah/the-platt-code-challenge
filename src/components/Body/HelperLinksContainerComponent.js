@@ -38,7 +38,7 @@ function HelperLinksContainerComponent() {
     ];
 
     return (
-        <div>
+        <div className='helper-links-container'>
             <HelperLinkComponent 
                 title='Shop all categories'
                 icon={linkIcon0}

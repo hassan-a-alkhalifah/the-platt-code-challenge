@@ -1,4 +1,4 @@
-.body {
+.helper-links-container {
     padding: 0 10px;
 }
 .helper-links {
@@ -17,4 +17,32 @@
 }
 .helper-links > div img {
     margin-right: 15px;
+}
+.sub-body {
+    padding: 0 10px;
+    background-color: #EEE;
+}
+.source-link-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px 0 15px;
+    margin-bottom: 20px;
+}
+.source-link div {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px #555;
+}
+.source-link p {
+    margin: 5px 0;
+}
+.todays-deal {
+    width: 100%;
+    box-shadow: 0px 2px 4px #999;
+    margin-bottom: 15px;
 }
