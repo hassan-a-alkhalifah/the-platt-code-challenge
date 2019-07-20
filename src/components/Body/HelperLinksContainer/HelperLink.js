@@ -1,8 +1,7 @@
 import React from 'react';
-import blkArrowFrdIcon from '../../assets/ic/black/ic_arrow_forward.png';
-import blkPlaylistAddCheck from '../../assets/ic/black/ic_playlist_add_check.png';
+import blkArrowFrdIcon from '../../../assets/ic/black/ic_arrow_forward.png';
 
-function HelperLinkComponent({ title, icon }) {
+function HelperLink({ title, icon }) {
     const arrowForwardStyles = {
         'width': '14px',
         'height': '14px'
@@ -19,4 +18,4 @@ function HelperLinkComponent({ title, icon }) {
     );
 }
 
-export default HelperLinkComponent;
+export default HelperLink;

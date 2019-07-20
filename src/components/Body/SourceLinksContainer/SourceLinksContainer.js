@@ -1,10 +1,10 @@
 import React from 'react';
-import SourceLinkComponent from './SourceLinkComponent';
-import linkIcon0 from '../../assets/ic/green/ic_line_style.png';
-import linkIcon1 from '../../assets/ic/green/ic_search.png';
-import linkIcon2 from '../../assets/ic/green/ic_scanner.png';
+import SourceLink from './SourceLink';
+import linkIcon0 from '../../../assets/ic/green/ic_line_style.png';
+import linkIcon1 from '../../../assets/ic/green/ic_search.png';
+import linkIcon2 from '../../../assets/ic/green/ic_scanner.png';
 
-function SourceLinksContainerComponent() {
+function SourceLinksContainer() {
     const links = [
         {
             title: 'Category',
@@ -25,7 +25,7 @@ function SourceLinksContainerComponent() {
             {
                 links.map((link, index) => {
                     return (
-                        <SourceLinkComponent
+                        <SourceLink
                             key={index} 
                             title={link.title}
                             icon={link.icon}
@@ -37,4 +37,4 @@ function SourceLinksContainerComponent() {
     );
 }
 
-export default SourceLinksContainerComponent;
+export default SourceLinksContainer;

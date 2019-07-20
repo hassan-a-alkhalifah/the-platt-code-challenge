@@ -1,14 +1,14 @@
 import React from 'react';
-import HelperLinkComponent from './HelperLinkComponent';
-import linkIcon0 from '../../assets/ic/black/ic_categories.png';
-import linkIcon1 from '../../assets/ic/black/ic_playlist_add_check.png';
-import linkIcon2 from '../../assets/ic/black/ic_list.png';
-import linkIcon3 from '../../assets/ic/green/ic_chat_active.png';
-import linkIcon4 from '../../assets/ic/black/ic_check_circle.png';
-import linkIcon5 from '../../assets/ic/white/ic_person.png';
-import linkIcon6 from '../../assets/ic/black/ic_place.png';
+import HelperLink from './HelperLink';
+import linkIcon0 from '../../../assets/ic/black/ic_categories.png';
+import linkIcon1 from '../../../assets/ic/black/ic_playlist_add_check.png';
+import linkIcon2 from '../../../assets/ic/black/ic_list.png';
+import linkIcon3 from '../../../assets/ic/green/ic_chat_active.png';
+import linkIcon4 from '../../../assets/ic/black/ic_check_circle.png';
+import linkIcon5 from '../../../assets/ic/white/ic_person.png';
+import linkIcon6 from '../../../assets/ic/black/ic_place.png';
 
-function HelperLinksContainerComponent() {
+function HelperLinksContainer() {
 
     const links = [
         {
@@ -39,7 +39,7 @@ function HelperLinksContainerComponent() {
 
     return (
         <div className='helper-links-container'>
-            <HelperLinkComponent 
+            <HelperLink
                 title='Shop all categories'
                 icon={linkIcon0}
             />
@@ -47,7 +47,7 @@ function HelperLinksContainerComponent() {
                 {
                     links.map((link, index) => {
                         return (
-                            <HelperLinkComponent 
+                            <HelperLink
                                 key={index}
                                 title={link.title}
                                 icon={link.icon}
@@ -60,4 +60,4 @@ function HelperLinksContainerComponent() {
     );
 }
 
-export default HelperLinksContainerComponent;
+export default HelperLinksContainer;

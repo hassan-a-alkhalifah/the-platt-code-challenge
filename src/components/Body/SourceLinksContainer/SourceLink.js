@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SourceLinkComponent({ title, icon }) {
+function SourceLink({ title, icon }) {
   return (
     <div className='source-link'>
         <div>
@@ -11,4 +11,4 @@ function SourceLinkComponent({ title, icon }) {
   );
 }
 
-export default SourceLinkComponent;
+export default SourceLink;

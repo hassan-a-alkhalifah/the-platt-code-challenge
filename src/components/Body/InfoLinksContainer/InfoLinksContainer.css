@@ -1,0 +1,26 @@
+.info-links-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.info-links-container a {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    text-decoration: unset;
+}
+.info-links-container a div {
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 0 0 4px #BBB;
+}
+.info-links-container img {
+    width: calc(100% - 40px);
+}
+.info-links-container h4 {
+    color: #000;
+    font-size: 18px;
+}

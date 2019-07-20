@@ -1,5 +1,5 @@
 import React from 'react';
-import './HeaderComponent.css';
+import './Header.css';
 import logo from '../../assets/img/logo.png';
 import wtSearchIcon from '../../assets/ic/white/ic_search.png';
 import wtShoppingCartIcon from '../../assets/ic/white/ic_shopping_cart.png';
@@ -7,7 +7,7 @@ import wtUserIcon from '../../assets/ic/white/ic_person.png';
 import wtHamburgerMenuIcon from '../../assets/ic/white/ic_menu.png';
 import blkSearchIcon from '../../assets/ic/black/ic_search.png';
 
-function HeaderComponent() {
+function Header() {
     return (
         <div className='header'>
             <div className='header-row-1'>
@@ -27,4 +27,4 @@ function HeaderComponent() {
     );
 }
 
-export default HeaderComponent;
+export default Header;
