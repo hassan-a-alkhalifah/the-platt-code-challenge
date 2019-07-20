@@ -1,5 +1,6 @@
 import React from 'react';
 import HelperLink from './HelperLink';
+import './HelperLinksContainer.css';
 import linkIcon0 from '../../../assets/ic/black/ic_categories.png';
 import linkIcon1 from '../../../assets/ic/black/ic_playlist_add_check.png';
 import linkIcon2 from '../../../assets/ic/black/ic_list.png';
