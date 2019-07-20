@@ -1,0 +1,16 @@
+.recently-viewed {
+    background-color: #FFF;
+    padding: 5px 15px 20px 15px;
+    box-shadow: 0 0 4px #BBB;
+    margin-bottom: 20px;
+}
+.recently-viewed div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recently-viewed div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

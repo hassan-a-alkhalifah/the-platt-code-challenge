@@ -1,6 +1,6 @@
 import React from 'react';
 import './PlattPlusBanner.css';
-import plattPlus from '../../assets/img/platt-plus.png';
+import plattPlus from '../../../assets/img/platt-plus.png';
 
 function PlattPlusBanner() {
 
