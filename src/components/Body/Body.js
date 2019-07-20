@@ -5,6 +5,7 @@ import SourceLinksContainer from './SourceLinksContainer/SourceLinksContainer';
 import PlattPlusBanner from './PlattPlusBanner/PlattPlusBanner';
 import RecentlyViewed from './RecentlyViewed/RecentlyViewed';
 import InfoLinksContainer from './InfoLinksContainer/InfoLinksContainer';
+import AppLinkBanner from './AppsLinkBanner/AppsLinkBanner';
 import deal from '../../assets/panel/deal.png';
 
 function Body() {
@@ -19,6 +20,7 @@ function Body() {
             <PlattPlusBanner />
             <RecentlyViewed />
             <InfoLinksContainer />
+            <AppLinkBanner />
         </div>
     </div>
   );

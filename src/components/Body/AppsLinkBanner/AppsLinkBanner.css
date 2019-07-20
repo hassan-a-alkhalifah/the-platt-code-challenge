@@ -1,0 +1,23 @@
+.app-link-banner {
+    padding-bottom: 20px
+}
+.app-link-banner div:nth-child(1){
+    height: 145px;
+    position: relative;
+    overflow: hidden;
+}
+.app-link-banner img{
+    height: 145px;
+    position: absolute;
+    right: 0;
+}
+.app-link-banner div:nth-child(2){
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+.app-link-banner h3 {
+    font-size: 18px;
+}

@@ -17,9 +17,6 @@
     background-color: #FFF;
     box-shadow: 0 0 4px #BBB;
 }
-.info-links-container img {
-    width: calc(100% - 40px);
-}
 .info-links-container h4 {
     color: #000;
     font-size: 18px;
