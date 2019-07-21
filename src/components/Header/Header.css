@@ -1,8 +1,13 @@
 .header {
     display: flex;
+    justify-content: center;
+    background-color: #017301;
+}
+.header > div {
+    display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #017301;
     padding: 20px 10px 25px 10px;
     height: 115px;
 }
@@ -27,4 +32,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+@media only screen and ( min-width: 768px ) {
+    .header > div {
+        max-width: 748px;
+    }
+}
+@media only screen and (min-width: 930px) {
+    .header > div {
+        max-width: 910px;
+    }
 }

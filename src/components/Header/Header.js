@@ -47,21 +47,31 @@ class Header extends Component {
     render() {
         return (
             <div className='header'>
-                <div className='header-row-1'>
-                    <img src={logo} alt='platt logo'/>
-                    <div>
-                        <img src={wtSearchIcon} alt='search icon'/>
-                        <img src={wtShoppingCartIcon} alt='shopping cart icon'/>
-                        <img src={wtUserIcon} alt='user icon'/>
-                        <img src={wtHamburgerMenuIcon} alt='dropdown menu icon'/>
+                <div>
+                    <div className='header-row-1'>
+                        <img src={logo} alt='platt logo'/>
+                        <div>
+                            <a href='#'>
+                                <img src={wtSearchIcon} alt='search icon'/>
+                            </a>
+                            <a href='#'>
+                                <img src={wtShoppingCartIcon} alt='shopping cart icon'/>
+                            </a>
+                            <a href='#'>
+                                <img src={wtUserIcon} alt='user icon'/>
+                            </a>
+                            <a href='#'>
+                                <img src={wtHamburgerMenuIcon} alt='dropdown menu icon'/>
+                            </a>
+                        </div>
                     </div>
+                    <SearchBar 
+                        onInputChange={this.handleInputChange}
+                    />
+                    <SearchResultsList 
+                        searchResults={this.state.results}
+                    />
                 </div>
-                <SearchBar 
-                    onInputChange={this.handleInputChange}
-                />
-                <SearchResultsList 
-                    searchResults={this.state.results}
-                />
             </div>
         );
     }

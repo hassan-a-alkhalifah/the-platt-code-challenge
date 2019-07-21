@@ -38,11 +38,25 @@
     .platt-plus-banner {
         width: 100%;
         max-width: 748px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .platt-plus-banner > div {
+        margin-right: 70px;
+    }
+    .platt-plus-banner img {
+        margin-left: 70px;
     }
 }
 
 @media only screen and ( min-width: 930px ) {
     .platt-plus-banner {
         max-width: 910px;
+    }
+    .platt-plus-banner > div {
+        margin-right: 90px;
+    }
+    .platt-plus-banner img {
+        margin-left: 90px;
     }
 }

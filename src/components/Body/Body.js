@@ -6,6 +6,7 @@ import PlattPlusBanner from './PlattPlusBanner/PlattPlusBanner';
 import RecentlyViewed from './RecentlyViewed/RecentlyViewed';
 import InfoLinksContainer from './InfoLinksContainer/InfoLinksContainer';
 import AppLinkBanner from './AppsLinkBanner/AppsLinkBanner';
+import ProductLinksContainer from './ProductLinksContainer/ProductLinksContainer';
 import deal from '../../assets/panel/deal.png';
 
 function Body() {
@@ -13,6 +14,7 @@ function Body() {
     <div className='body'>
         <HelperLinksContainer />
         <div className='sub-body'>
+            <ProductLinksContainer />
             <SourceLinksContainer />
             <PlattPlusBanner />
             <div className='sub-center-body'>

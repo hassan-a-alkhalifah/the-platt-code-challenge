@@ -12,7 +12,7 @@ function RecentlyViewed() {
                 <a href='#'>View all</a>
             </div>
             <div>
-                <a hef='#'><img src={img11} alt=''/></a>
+                <a href='#'><img src={img11} alt=''/></a>
                 <a href='#'><img src={img22} alt=''/></a>
                 <a href='#'><img src={img22} alt=''/></a>
             </div>

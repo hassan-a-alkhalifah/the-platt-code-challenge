@@ -42,8 +42,7 @@
         align-items: center;
     }
     .source-link-container {
-        width: 100%;
-        max-width: 748px;
+        display: none;
     }
     .sub-body > .platt-plus-banner:nth-child(2) {
         display: flex;

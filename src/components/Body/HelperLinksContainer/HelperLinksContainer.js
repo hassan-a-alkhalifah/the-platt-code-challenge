@@ -1,61 +1,68 @@
 import React from 'react';
 import HelperLink from './HelperLink';
 import './HelperLinksContainer.css';
-import linkIcon0 from '../../../assets/ic/black/ic_categories.png';
-import linkIcon1 from '../../../assets/ic/black/ic_playlist_add_check.png';
-import linkIcon2 from '../../../assets/ic/black/ic_list.png';
-import linkIcon3 from '../../../assets/ic/green/ic_chat_active.png';
-import linkIcon4 from '../../../assets/ic/black/ic_check_circle.png';
-import linkIcon5 from '../../../assets/ic/white/ic_person.png';
-import linkIcon6 from '../../../assets/ic/black/ic_place.png';
+import blkCategoryIcon from '../../../assets/ic/black/ic_categories.png';
+import blkPlayListIcon from '../../../assets/ic/black/ic_playlist_add_check.png';
+import listIcon from '../../../assets/ic/black/ic_list.png';
+import grnChatActiveIcon from '../../../assets/ic/green/ic_chat_active.png';
+import blkCheckCircleIcon from '../../../assets/ic/black/ic_check_circle.png';
+import blkPersonIcon from '../../../assets/ic/black/ic_person.png';
+import blkPlaceIcon from '../../../assets/ic/black/ic_place.png';
+import blkChatActiveIcon from '../../../assets/ic/black/ic_chat.png';
 
 function HelperLinksContainer() {
 
     const links = [
         {
             title: 'My Catalog',
-            icon: `${linkIcon1}`
+            icon: `${blkPlayListIcon}`
         },
         {
             title: 'My List',
-            icon: `${linkIcon2}`
+            icon: `${listIcon}`
         },
         {
             title: 'Live Help',
-            icon: `${linkIcon3}`
+            icon: [
+                `${grnChatActiveIcon}`,
+                `${blkChatActiveIcon}`
+            ]
         },
         {
             title: 'PIM',
-            icon: `${linkIcon4}`
+            icon: `${blkCheckCircleIcon}`
         },
         {
             title: 'Account',
-            icon: `${linkIcon5}`
+            icon: `${blkPersonIcon}`
         },
         {
             title: 'Branch Locations',
-            icon: `${linkIcon6}`
+            icon: `${blkPlaceIcon}`
         },
     ];
 
     return (
         <div className='helper-links-container'>
-            <HelperLink
-                title='Shop all categories'
-                icon={linkIcon0}
-            />
-            <div className='links-list'>
-                {
-                    links.map((link, index) => {
-                        return (
-                            <HelperLink
-                                key={index}
-                                title={link.title}
-                                icon={link.icon}
-                            />
-                        );
-                    })
-                }
+            <div>
+                <HelperLink
+                    title='Shop all categories'
+                    icon={blkCategoryIcon}
+                />
+                <div className='links-list'>
+                    {
+                        links.map((link, index) => {
+                            return (
+                                <HelperLink
+                                    key={index}
+                                    title={link.title}
+                                    icon={link.icon}
+                                    linkPos={index + 1}
+                                />
+                            );
+                        })
+                    }
+                </div>
             </div>
         </div>
     );
