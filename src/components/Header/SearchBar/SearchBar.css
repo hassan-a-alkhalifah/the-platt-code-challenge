@@ -13,6 +13,7 @@
     width: calc(100% - 21px);
     border: none;
     border-radius: 4px;
+    padding-left: 30px;
 }
 .search-bar img {
     width: 18px;

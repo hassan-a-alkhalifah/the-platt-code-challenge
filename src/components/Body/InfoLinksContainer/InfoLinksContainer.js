@@ -9,7 +9,7 @@ import icPlattU from '../../../assets/img/ic_platt-u.png';
 function InfoLinksContainer() {
     const links = [
         {
-            title: 'Super Too Day & Dynamic Data Day',
+            title: 'Super Tool Day & Dynamic Data Day',
             logo: `${superToolDay}`
         },
         {

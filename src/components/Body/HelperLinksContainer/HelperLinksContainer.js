@@ -33,7 +33,7 @@ function HelperLinksContainer() {
             icon: `${linkIcon5}`
         },
         {
-            title: 'Branch Location',
+            title: 'Branch Locations',
             icon: `${linkIcon6}`
         },
     ];

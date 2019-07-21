@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 import SearchBar from './SearchBar/SearchBar';
+import SearchResultsList from './SearchResultsList/SearchResultsList';
 import { getSearchResults } from './../../services/getSearchResults';
 import logo from '../../assets/img/logo.png';
 import wtSearchIcon from '../../assets/ic/white/ic_search.png';
@@ -34,9 +35,11 @@ class Header extends Component {
             query: searchValue
         }, () => {
             if(this.state.query && this.state.query.length > 1) {
-                if(this.state.query.length % 2 === 0) {
-                    this.getSearchResults()
-                }
+                this.getSearchResults()
+            } else {
+                this.setState({
+                    results: []
+                })
             }
         })
     }
@@ -55,6 +58,9 @@ class Header extends Component {
                 </div>
                 <SearchBar 
                     onInputChange={this.handleInputChange}
+                />
+                <SearchResultsList 
+                    searchResults={this.state.results}
                 />
             </div>
         );

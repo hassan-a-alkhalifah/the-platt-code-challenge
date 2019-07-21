@@ -47,6 +47,8 @@
     }
     .sub-body > .platt-plus-banner:nth-child(2) {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .sub-center-body {
         flex-direction: row;

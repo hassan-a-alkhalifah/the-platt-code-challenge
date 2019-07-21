@@ -11,7 +11,7 @@ function AppLinkBanner() {
                 </div>
             </a>
           <div>
-              <h4>Shop better, download the Platt App tpday</h4>
+              <h4>Shop better, download the Platt App today</h4>
           </div>
         </div>
     );
