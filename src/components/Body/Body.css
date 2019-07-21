@@ -21,8 +21,47 @@
 .source-link p {
     margin: 5px 0;
 }
+.sub-body > .platt-plus-banner:nth-child(2) {
+    display: none;
+}
+.sub-center-body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 .todays-deal {
     width: 100%;
     box-shadow: 0px 2px 4px #999;
-    margin-bottom: 20px;
+}
+
+@media only screen and ( min-width: 768px ) {
+    .sub-body > .platt-plus-banner:nth-child(2) {
+        display: block;
+    }
+    .sub-center-body {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: none;
+    }
+    .sub-center-body .platt-plus-banner:nth-child(1) {
+        display: none;
+    }
+    .sub-center-body .platt-plus-banner {
+        display: none;
+    }
+    .sub-center-body > a:first-child {
+        margin-right: 20px;
+    }
+    .todays-deal {
+       width: 364px;
+    }
+}
+
+@media only screen and ( min-width: 930px ) {
+    .sub-center-body > a:first-child {
+        width: unset;
+    }
+    .todays-deal {
+        width: 445px;
+    }
 }

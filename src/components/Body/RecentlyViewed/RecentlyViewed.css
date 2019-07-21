@@ -2,7 +2,6 @@
     background-color: #FFF;
     padding: 5px 15px 20px 15px;
     box-shadow: 0 0 4px #BBB;
-    margin-bottom: 20px;
 }
 .recently-viewed div:nth-child(1) {
     display: flex;
@@ -18,4 +17,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media only screen and ( min-width: 768px ) {
+    .recently-viewed {
+        width: 334px;
+        height: 137px;
+    }
+}
+
+@media only screen and ( min-width: 930px ) {
+    .recently-viewed {
+        width: 415px;
+        height: 173px;
+    }
 }

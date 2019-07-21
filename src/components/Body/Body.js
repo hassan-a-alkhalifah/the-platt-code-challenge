@@ -14,11 +14,14 @@ function Body() {
         <HelperLinksContainer />
         <div className='sub-body'>
             <SourceLinksContainer />
-            <a href='#'>
-                <img className='todays-deal' src={deal} alt='todays deal link'/>
-            </a>
             <PlattPlusBanner />
-            <RecentlyViewed />
+            <div className='sub-center-body'>
+              <a href='#'>
+                  <img className='todays-deal' src={deal} alt='todays deal link'/>
+              </a>
+              <PlattPlusBanner />
+              <RecentlyViewed />
+            </div>
             <InfoLinksContainer />
             <AppLinkBanner />
         </div>
