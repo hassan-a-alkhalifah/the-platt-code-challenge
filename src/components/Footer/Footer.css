@@ -59,3 +59,15 @@
     font-weight: bold;
     color: #E8E8E8;
 }
+
+@media only screen and ( min-width: 768px ) {
+    .ftr-btm-links {
+        max-width: 748px;
+    }
+}
+
+@media only screen and ( min-width: 930px ) {
+    .ftr-btm-links {
+        max-width: 910px;
+    }
+}

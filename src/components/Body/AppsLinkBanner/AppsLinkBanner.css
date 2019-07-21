@@ -1,7 +1,8 @@
 .app-link-banner {
+    width: 100%;
     padding-bottom: 20px
 }
-.app-link-banner div:nth-child(1){
+.app-link-banner div:nth-child(1) {
     height: 145px;
     position: relative;
     overflow: hidden;
@@ -11,7 +12,7 @@
     position: absolute;
     right: 0;
 }
-.app-link-banner div:nth-child(2){
+.app-link-banner div:nth-child(2) {
     height: 65px;
     display: flex;
     justify-content: center;
@@ -20,4 +21,20 @@
 }
 .app-link-banner h3 {
     font-size: 18px;
+}
+
+@media only screen and ( min-width: 768px ) {
+    .app-link-banner {
+        width: 100%;
+        max-width: 748px;
+    }
+}
+
+@media only screen and ( min-width: 930px ) {
+    .app-link-banner {
+        max-width: 910px;
+    }
+    .app-link-banner img{
+        height: 161px;
+    }
 }

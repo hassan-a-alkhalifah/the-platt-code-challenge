@@ -20,3 +20,34 @@
 .info-links-container h4 {
     color: #000;
 }
+
+@media only screen and ( min-width: 768px ) {
+    .info-links-container {
+        max-width: 750px;
+    }
+    .info-links-container a {
+        width: 157px;
+        margin: 0 20px 20px 20px;
+        text-decoration: unset;
+    }
+    .info-links-container a:first-child {
+        margin-left: 0;
+    }
+    .info-links-container a:last-child {
+        margin-right: 0;
+    }
+    .info-links-container a div {
+        height: 200px;
+    }
+}
+
+@media only screen and ( min-width: 930px ) {
+    .info-links-container {
+        max-width: 910px;
+    }
+    .info-links-container a {
+        width: 197px;
+        margin: 0 20px 20px 20px;
+        text-decoration: unset;
+    }
+}

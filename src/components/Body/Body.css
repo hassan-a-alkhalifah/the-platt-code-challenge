@@ -35,8 +35,18 @@
 }
 
 @media only screen and ( min-width: 768px ) {
+    .sub-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .source-link-container {
+        width: 100%;
+        max-width: 748px;
+    }
     .sub-body > .platt-plus-banner:nth-child(2) {
-        display: block;
+        display: flex;
     }
     .sub-center-body {
         flex-direction: row;
@@ -58,6 +68,9 @@
 }
 
 @media only screen and ( min-width: 930px ) {
+    .source-link-container {
+        max-width: 910px;
+    }
     .sub-center-body > a:first-child {
         width: unset;
     }
