@@ -23,11 +23,12 @@
 
 @media only screen and ( min-width: 768px ) {
     .info-links-container {
+        width: 100%;
         max-width: 750px;
     }
     .info-links-container a {
         width: 152px;
-        margin: 0 20px 20px 20px;
+        margin-bottom: 20px;
         text-decoration: unset;
     }
     .info-links-container a:first-child {

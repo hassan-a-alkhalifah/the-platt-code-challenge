@@ -13,6 +13,9 @@
     flex-direction: column;
     align-items: center;
 }
+.platt-plus-banner img {
+    margin-bottom: 20px;
+}
 .platt-plus-banner h3 {
     margin: 0
 }
@@ -46,6 +49,7 @@
     }
     .platt-plus-banner img {
         margin-left: 70px;
+        margin-bottom: 0;
     }
 }
 
