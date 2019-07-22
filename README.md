@@ -68,9 +68,3 @@ Builds the app for production to the `build` folder.<br>
 * Jest
 * Enzyme
 * prop-types
-
-## License
-
-This software is licensed under the MIT license.
-
-Copyright (c) 2018 **Hassan Al-khalifah**
