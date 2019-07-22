@@ -1,10 +1,15 @@
 .helper-links-container {
     display: flex;
     justify-content: center;
+    background-color: #FFF;
 }
 .helper-links-container > div {
     width: 100%;
     padding: 0 10px;
+}
+.helper-links-container > div > .helper-links {
+    font-weight: bold;
+    font-size: 19px;
 }
 .helper-links {
     display: flex;
@@ -15,7 +20,7 @@
     text-decoration: none;
     color: #000;
 }
-.links-list div:last-child {
+.links-list a:last-child {
     border-bottom: none;
 }
 .links-list .helper-links:nth-child(3) > div img:nth-child(2) {
@@ -25,7 +30,9 @@
     display: flex;
     align-items: center;
 }
-.helper-links > div img {
+
+.helper-links > div div {
+    width: 27px;
     margin-right: 15px;
 }
 
@@ -63,14 +70,15 @@
     .links-list .helper-links:nth-child(3n) {
         border-right: none;
     }
+    .links-list .helper-links:nth-child(6) {
+        border-right: none;
+        border-bottom: 1px solid #999;
+    }
     .links-list .helper-links:nth-child(3) > div img:nth-child(1) {
         display: none;
     }
     .links-list .helper-links:nth-child(3) > div img:nth-child(2) {
         display: block;
-    }
-    .links-list .helper-links:last-child {
-        border-bottom: 1px solid #999;
     }
 }
 @media only screen and (min-width: 930px) {

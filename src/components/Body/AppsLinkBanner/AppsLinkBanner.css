@@ -1,6 +1,6 @@
 .app-link-banner {
     width: 100%;
-    padding-bottom: 20px
+    box-shadow: 0 0 4px #BBB;
 }
 .app-link-banner div:nth-child(1) {
     height: 145px;

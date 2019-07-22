@@ -20,8 +20,11 @@
     color: #FFF;
     margin-bottom: 10px;
 }
+.ftr-phone p {
+    color: #CCC;
+}
 .ftr-time {
-    color: #E8E8E8;
+    color: #CCC;
     margin-bottom: 30px;
 }
 .ftr-live-help-btn {

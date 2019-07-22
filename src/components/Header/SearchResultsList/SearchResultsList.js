@@ -1,5 +1,6 @@
 import React from 'react';
 import './SearchResultsList.css';
+import PropTypes from 'prop-types';
 import SearchResult from './SearchResult';
 
 function SearchResultsList({ searchResults }) {
@@ -19,6 +20,10 @@ function SearchResultsList({ searchResults }) {
             </div>
         </div>
     );
+}
+
+SearchResultsList.propTypes = {
+    searchResults: PropTypes.array
 }
 
 export default SearchResultsList;

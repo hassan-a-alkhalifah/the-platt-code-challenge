@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function ProductLink({ title, img }) {
     return (
@@ -7,6 +8,11 @@ function ProductLink({ title, img }) {
             <p>{title}</p>
         </a>
     );
+}
+
+ProductLink.propTypes = {
+    title: PropTypes.string,
+    img: PropTypes.object
 }
 
 export default ProductLink;
