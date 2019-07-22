@@ -12,7 +12,7 @@ function ProductLink({ title, img }) {
 
 ProductLink.propTypes = {
     title: PropTypes.string,
-    img: PropTypes.object
+    img: PropTypes.any
 }
 
 export default ProductLink;

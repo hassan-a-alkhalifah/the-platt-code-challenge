@@ -14,16 +14,39 @@ class Header extends Component {
         super();
         this.state = {
             query: '',
-            results: []
+            results: [],
+            searchResultsVisible: true
+        }
+    }
+
+    componentDidMount() {
+        document.body.addEventListener('click', this.handleBodyClick);
+    }
+    
+    componentWillUnmount() {
+        document.body.removeEventListener('click', this.handleBodyClick);
+    }
+    
+    handleClick = (e) => {
+        e.preventPropagation();
+    }
+    
+    handleBodyClick = (e) => {
+        if(e.target.getAttribute('data-id') !== 'search-bar' && this.state.searchResultsVisible === true) {
+            this.setState({
+                query: '',
+                results: [],
+                searchResultsVisible: false
+            })
         }
     }
 
     getSearchResults = async () => {
         try {
             const res = await getSearchResults(this.state.query);
-            console.log(res.data.results);
             this.setState({
-                results: res.data.results
+                results: res.data.results,
+                searchResultsVisible: true
             });
         } catch(error) {
             console.log('Error', error.message);
@@ -32,7 +55,8 @@ class Header extends Component {
 
     handleInputChange = (searchValue) => {
         this.setState({
-            query: searchValue
+            query: searchValue,
+            searchResultsVisible: true
         }, () => {
             if(this.state.query && this.state.query.length > 1) {
                 this.getSearchResults()
@@ -49,7 +73,9 @@ class Header extends Component {
             <div className='header'>
                 <div>
                     <div className='header-row-1'>
-                        <img src={logo} alt='platt logo'/>
+                        <a href='#'>
+                            <img src={logo} alt='platt logo'/>
+                        </a>
                         <div>
                             <a href='#'>
                                 <img src={wtSearchIcon} alt='search icon'/>
@@ -67,6 +93,7 @@ class Header extends Component {
                     </div>
                     <SearchBar 
                         onInputChange={this.handleInputChange}
+                        query={this.state.query}
                     />
                     <SearchResultsList 
                         searchResults={this.state.results}

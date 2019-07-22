@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 
 function SourceLink({ title, icon }) {
   return (
-    <div className='source-link'>
+    <a href='#' className='source-link'>
         <div>
             <img src={icon} alt={title}/>
         </div>
         <p>{title}</p>
-    </div>
+    </a>
   );
 }
 
 SourceLink.propTypes = {
   title: PropTypes.string,
-  icon: PropTypes.object
+  icon: PropTypes.any
 }
 
 export default SourceLink;

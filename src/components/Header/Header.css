@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.header-row-1 > img {
+.header-row-1 > a img {
     width: 140px;
 }
 .header-row-1 div img:nth-child(1), .header-row-1 div img:nth-child(2), .header-row-1 div img:nth-child(4) {

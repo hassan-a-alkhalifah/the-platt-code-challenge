@@ -14,7 +14,7 @@ function InfoLink({ title, logo }) {
 
 InfoLink.propTypes = {
   title: PropTypes.string,
-  logo: PropTypes.object
+  logo: PropTypes.any
 }
 
 export default InfoLink;

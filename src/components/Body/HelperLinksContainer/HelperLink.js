@@ -37,8 +37,8 @@ function HelperLink({ title, icon, linkPos }) {
 
 HelperLink.propTypes = {
     title: PropTypes.string,
-    icon: PropTypes.object,
-    linkPos: PropTypes.array
+    icon: PropTypes.any,
+    linkPos: PropTypes.number
 }
 
 export default HelperLink;
